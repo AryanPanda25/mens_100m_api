@@ -9,4 +9,3 @@ app.use(mensRouter);
 app.listen(port,()=>{
     console.log("listening");
 })
-module.exports=app;

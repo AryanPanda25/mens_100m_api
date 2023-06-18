@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"node src/app.js",
-    "dev":"nodemon src/app.js"
+    "dev":"nodemon src/app.js",
+    "vercel-build":"nodemon src/app.js"
 
   },
   "keywords": [],
@@ -15,5 +16,6 @@
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^7.0.3"
-  }
+  },
+  "devDependencies": {"nodemon":"^2.0.22"}
 }

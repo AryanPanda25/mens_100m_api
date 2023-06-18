@@ -5,4 +5,5 @@ mongoose.connect("mongodb://127.0.0.1:27017/olympics",{
     console.log("connection successfully");
 }).catch((e)=>{
     console.log(e);
+    
 });

@@ -13,6 +13,9 @@ router.post("/mens",async(req,res)=>{
         res.status(400).send(err);
     }
 })
+router.get("/",(req,res)=>{
+    res.send("Hello from server");
+})
 router.get("/mens",async (req,res)=>{
     try{
         const result=await MensRanking.find().sort({"ranking":1});

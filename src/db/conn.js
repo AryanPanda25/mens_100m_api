@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/olympics",{
+mongoose.connect("mongodb://127.0.0.1:27017/olympics",{
     useNewUrlParser:true,
     useUnifiedTopology:true}).then(()=>{
     console.log("connection successfully");
 }).catch((e)=>{
     console.log(e);
-
 });

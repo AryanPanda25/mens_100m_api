@@ -1,8 +1,13 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/olympics",{
+const dotenv = require("dotenv");
+dotenv.config({path:"../config.env"});
+const url=process.env.DATABASE;
+mongoose.connect(url,{
     useNewUrlParser:true,
-    useUnifiedTopology:true}).then(()=>{
+    useUnifiedTopology:true
+}).then(()=>{
     console.log("connection successfully");
 }).catch((e)=>{
     console.log(e);
 });
+
